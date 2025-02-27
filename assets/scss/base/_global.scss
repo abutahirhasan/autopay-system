@@ -1,0 +1,249 @@
+//Html Smooth Scroll
+html {
+	scroll-behavior: initial !important;
+}
+	//Body Default Style
+body {
+	font-size: 18px;
+	line-height: 150%;
+	padding: 0;
+	margin: 0;
+	font-weight: 400;
+	overflow-x: hidden;
+	position: relative;
+}
+//Global Section Overflow Hidden
+section,
+footer {
+	overflow: hidden;
+}
+//Tag Default Style
+a, 
+p,
+button,
+span,
+label,
+li {
+	margin: 0;
+	font-weight: 400;
+	i{
+		font-weight: 400;
+	}
+}
+//A Tag Default Style
+a {
+	text-decoration: none;
+	outline: none;
+	transition: all 0.4s;
+	&:focus, &:hover {
+		text-decoration: none;
+		outline: none;
+	}
+	i{
+		font-weight: 400;
+	}
+}
+//All Heading Tag Default Style
+h1,
+h1 > a,
+h2,
+h2 > a,
+h3,
+h3 > a,
+h4,
+h4 > a,
+h5,
+h5 > a,
+h6,
+h6 > a,
+.display-one, .display-two, .display-three, .display-four, .display-five, .display-six, .heading{
+	padding: 0;
+	margin: 0;
+	line-height: 128%;
+	display: block;
+	transition: all 0.4s;
+	span{
+		font-size: inherit;
+		color: inherit;
+		line-height: inherit;
+		font-weight: inherit;
+	}
+	i{
+		font-weight: 400;
+		transition: all 0.4s;
+	}
+}
+//Images Defaul Max-width 100
+img {
+	max-width: 100%;
+	height: auto;
+}
+//Order List & Unorder List Default Style
+ul,
+ol {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	li{
+		font-size: inherit;
+		font-weight: inherit;
+	}
+}
+//Button Tag Defatult Style
+button {
+	border: none;
+	cursor: pointer;
+	font-size: 18px;
+	line-height: 150%;
+	padding: 0;
+	background-color: transparent;
+}
+//Default Input Style
+input,
+textarea {
+	width: 100%;
+	outline-color: transparent;
+	font-size: 14px;
+	border-radius: 6px;
+	background-color: transparent;
+	&::placeholder {
+		font-size: 16px;
+	}
+	&:focus{
+		box-shadow: none;
+		border: 1px solid transparent;
+	}
+}
+::placeholder {
+	font-size: 14px;
+}
+
+// input custom 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+input[type="number"] {
+	-moz-appearance: textfield;
+}
+input[type="checkbox"] {
+	width: initial;
+	height: initial;
+}
+
+//Color Custom Css
+span,
+p{
+	line-height: 150%;
+	font-size: 16px;
+	transition: all 0.4s;
+}
+
+// ul custom
+.ul-dots{
+	li{
+		list-style: disc;
+	}
+}
+.ul-decimal{
+	li{
+		list-style: decimal;
+	}
+}
+
+span {
+	display: inline-block;
+}
+.transition{
+	transition: 0.5s;
+}
+//Table Style Css
+
+.table thead th,
+.table td,
+.table th {
+	border: none;
+}
+
+//Iframe Style 
+iframe {
+	border: 0;
+	width: 100%;
+}
+
+// Custom Dropdown 
+*::-webkit-scrollbar {
+	width: 0px;
+}
+*::-webkit-scrollbar-button,
+*::-webkit-scrollbar-thumb {
+	background: red;
+}
+
+// Animation Start 
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 50%, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+@keyframes fadeIn1st {
+    0% {
+        opacity: 0;
+        transform: translate3d(10%, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+@keyframes fadeIn2nd {
+    0% {
+        opacity: 0;
+        transform: translate3d(-10%, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        transform: none;
+    }
+}
+@keyframes rotates {
+	100% {
+		transform: rotate(360deg);
+	}
+}
+@keyframes zin {
+	50%{
+		transform: scale(1.1);
+	}
+}
+@keyframes updown {
+	50%{
+		transform: translateY(-10px);
+	}
+}
+@keyframes pres1 {
+	100%{
+		left: 50%;
+	}
+}
+@keyframes pres2 {
+	100%{
+		right: 50%;
+	}
+}
+@keyframes updown {
+	50%{
+		transform: translateY(-10px);
+	}
+}
+@keyframes zoomin {
+	50%{
+		transform: scale(1.1);
+	}
+}

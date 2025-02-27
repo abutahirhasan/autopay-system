@@ -1,0 +1,29 @@
+// default font family
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+//Custom Font Family Adding
+@font-face {
+    font-family: 'Gilroy'; 
+    src: url('../../assets/webfonts/Gilroy-Medium.ttf') format('truetype');
+	font-weight: 500;
+}
+@font-face {
+    font-family: 'Gilroy'; 
+    src: url('../../assets/webfonts/Gilroy-Regular.ttf') format('truetype');
+	font-weight: 400;
+}
+
+
+//default root
+:root {
+	/* Font Family */
+	--body-font: "Gilroy", sans-serif;
+	--sub-font:  "Gilroy", sans-serif;
+	--heading-font:  "Oswald", serif;
+	/* Transition */
+	--transition: all 0.5s ease-in-out;
+
+	/* Color styles */
+	--n0: #fff;
+	--n00: #000;
+}
