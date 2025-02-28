@@ -910,4 +910,34 @@ iframe {
 .autoplay-component1 .autoplay-component-item:hover {
   box-shadow: rgba(100, 100, 111, 0.096) 0px 7px 29px 0px;
   border-color: var(--base-clr);
+}
+
+.autoplay-component-year {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 24px 18px;
+  background: var(--white-clr);
+  border-radius: 4px;
+  text-align: center;
+  transition: all 0.4s;
+  border: 1px solid var(--white-clr);
+  display: block;
+}
+.autoplay-component-year .auto-title {
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  color: var(--black-clr);
+}
+.autoplay-component-year:hover {
+  box-shadow: rgba(100, 100, 111, 0.096) 0px 7px 29px 0px;
+  border-color: var(--base-clr);
+}
+
+.secure-lock {
+  font-size: 16px;
+  font-weight: 500;
+  color: #5c5959;
+}
+.secure-lock i {
+  color: var(--base-clr);
 }/*# sourceMappingURL=main.css.map */

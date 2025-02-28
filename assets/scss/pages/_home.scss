@@ -27,8 +27,8 @@
 	border-radius: 5px;
 	color: var(--white-clr);
 	font-size: 14px;
-    font-weight: 600;
-    box-shadow: rgba(73, 73, 75, 0.2) 0px 7px 29px 0px;
+	font-weight: 600;
+	box-shadow: rgba(73, 73, 75, 0.2) 0px 7px 29px 0px;
 	padding: 4px 2px 7px;
 	position: absolute;
 	bottom: 150%;
@@ -86,3 +86,37 @@
 	}
 }
 //autoplay-component1
+
+//Years style
+.autoplay-component-year {
+	.auto-title {
+		font-size: 18px;
+		font-weight: 600;
+		display: block;
+		color: var(--black-clr);
+	}
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	padding: 24px 18px;
+	background: var(--white-clr);
+	border-radius: 4px;
+	text-align: center;
+	transition: all 0.4s;
+	border: 1px solid var(--white-clr);
+	display: block;
+	&:hover {
+		box-shadow: rgba(100, 100, 111, 0.096) 0px 7px 29px 0px;
+		border-color: var(--base-clr);
+	}
+}
+//Years style
+
+//Lock Style
+.secure-lock {
+	font-size: 16px;
+	font-weight: 500;
+	color: #5c5959;
+	i {
+		color: var(--base-clr);
+	}
+}
+//Lock Style
