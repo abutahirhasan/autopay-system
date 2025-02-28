@@ -225,6 +225,23 @@
 	background: var(--white-clr);
 	color: var(--base-clr);
 }
+.signin-btn {
+	border-color: #5c595917;
+	background: var(--white-clr);
+	color: var(--base-clr);
+    border: 1px solid var(--base-clr);
+	border-radius: 4px;
+	padding: 7px 24px 10px;
+	font-size: 16px;
+	font-weight: 500;
+	text-align: center;
+	display: inline-block;
+	transition: all 0.4s;
+	&:hover {
+		background: var(--base-clr);
+		color: var(--white-clr);
+	}
+}
 .show-more {
 	font-size: 16px;
 	text-align: center;
@@ -232,6 +249,13 @@
 	font-weight: 600;
 	display: block;
 	margin-bottom: 15px;
+}
+.logo{
+    max-width: 160px;
+    display: block;
+    img{
+        width: 100%;
+    }
 }
 
 //Lock Style
@@ -272,32 +296,78 @@
 		.nice-select {
 			width: 100%;
 			padding: 10px 20px;
-            border-radius: 0;
+			border-radius: 0;
 			border: 1px solid #5c59594f;
-            height: initial;
-            .current{
-                font-size: 16px;
-                color: #5c59599f;
-                font-weight: 500;
-            }
-            .list{
-                width: 100%;
-            }
-            &::after{
-                right: 22px;
-                width: 10px;
-                height: 10px;
-            }
+			height: initial;
+			.current {
+				font-size: 16px;
+				color: #5c59599f;
+				font-weight: 500;
+			}
+			.list {
+				width: 100%;
+			}
+			&::after {
+				right: 22px;
+				width: 10px;
+				height: 10px;
+			}
 		}
 	}
-    .the-application-pragraph{
-        font-size: 16px;
-        color: #5c59599f;
-        font-weight: 500;
-    }
-    .selecting-pragraph{
-        font-size: 14px;
-        color: #707377;
-    }
+	.the-application-pragraph {
+		font-size: 16px;
+		color: #5c59599f;
+		font-weight: 500;
+	}
+	.selecting-pragraph {
+		font-size: 14px;
+		color: #707377;
+	}
 }
 //autoplay-form-section
+
+
+
+//footer Section
+.footer-section{
+    background: #1f1f1f;
+    .footer-wrapper{
+        max-width: 800px;
+        margin: 0 auto;
+        .copyright{
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+    }
+    .footer-date-area{
+        display: flex;
+        flex-wrap: wrap;
+        a{
+            color: #6c757d;
+            font-weight: 500;
+        }
+        p{
+            color: #54595e;
+        }
+    }
+    .terms-area{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        gap: 14px;
+        li{
+            a{
+                font-size: 16px;
+                color: var(--base-clr);
+            }
+        }
+        .line{
+            width: 1px;
+            height: 12px;
+            background: var(--base-clr);
+        }
+    }
+}
+//footer Section
