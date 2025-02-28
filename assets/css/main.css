@@ -29,26 +29,17 @@
 └── main.scss     <Imports everything>
 ====*/
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
-@font-face {
-  font-family: "Gilroy";
-  src: url("../../assets/webfonts/Gilroy-Medium.ttf") format("truetype");
-  font-weight: 500;
-}
-@font-face {
-  font-family: "Gilroy";
-  src: url("../../assets/webfonts/Gilroy-Regular.ttf") format("truetype");
-  font-weight: 400;
-}
 :root {
   /* Font Family */
-  --body-font: "Gilroy", sans-serif;
-  --sub-font: "Gilroy", sans-serif;
+  --body-font: "Oswald", serif;
+  --sub-font: "Oswald", serif;
   --heading-font: "Oswald", serif;
   /* Transition */
   --transition: all 0.5s ease-in-out;
   /* Color styles */
-  --n0: #fff;
-  --n00: #000;
+  --white-clr: #fff;
+  --black-clr: #000;
+  --base-clr: #519bad;
 }
 
 .display-one {
@@ -834,68 +825,89 @@ iframe {
   background: red;
 }
 
-@keyframes fadeInUp {
-  0% {
-    opacity: 0;
-    transform: translate3d(0, 50%, 0);
-  }
-  100% {
-    opacity: 1;
-    transform: none;
-  }
+.global-section {
+  background: var(--white-clr);
+  padding: 120px 0;
 }
-@keyframes fadeIn1st {
-  0% {
-    opacity: 0;
-    transform: translate3d(10%, 0, 0);
-  }
-  100% {
-    opacity: 1;
-    transform: none;
-  }
+
+.progress-container-wrap {
+  margin: 0 auto;
+  max-width: 570px;
 }
-@keyframes fadeIn2nd {
-  0% {
-    opacity: 0;
-    transform: translate3d(-10%, 0, 0);
-  }
-  100% {
-    opacity: 1;
-    transform: none;
-  }
+
+.progress-container,
+.progress {
+  background: #ebebeb;
+  position: relative;
+  border-radius: 100px;
+  height: 20px;
 }
-@keyframes rotates {
-  100% {
-    transform: rotate(360deg);
-  }
+
+.progress {
+  background-color: var(--base-clr);
+  width: 0;
+  transition: width 0.4s linear;
 }
-@keyframes zin {
-  50% {
-    transform: scale(1.1);
-  }
+
+.percentage {
+  background-color: var(--base-clr);
+  border-radius: 5px;
+  color: var(--white-clr);
+  font-size: 14px;
+  font-weight: 600;
+  box-shadow: rgba(73, 73, 75, 0.2) 0px 7px 29px 0px;
+  padding: 4px 2px 7px;
+  position: absolute;
+  bottom: 150%;
+  left: 0;
+  transform: translateX(-50%);
+  width: 45px;
+  text-align: center;
+  transition: left 0.4s linear;
 }
-@keyframes updown {
-  50% {
-    transform: translateY(-10px);
-  }
+
+.percentage::after {
+  background-color: var(--base-clr);
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+  height: 10px;
+  width: 10px;
+  z-index: -1;
 }
-@keyframes pres1 {
-  100% {
-    left: 50%;
-  }
+
+.autoplay-component1 {
+  max-width: 850px;
+  margin: 0 auto;
 }
-@keyframes pres2 {
-  100% {
-    right: 50%;
-  }
+.autoplay-component1 .autoplay-component-item {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 35px 18px;
+  background: var(--white-clr);
+  border-radius: 4px;
+  text-align: center;
+  transition: all 0.4s;
+  border: 1px solid var(--white-clr);
+  display: block;
 }
-@keyframes updown {
-  50% {
-    transform: translateY(-10px);
-  }
+.autoplay-component1 .autoplay-component-item .icon {
+  margin-bottom: 14px;
 }
-@keyframes zoomin {
-  50% {
-    transform: scale(1.1);
-  }
+.autoplay-component1 .autoplay-component-item .icon svg {
+  width: 50px;
+}
+.autoplay-component1 .autoplay-component-item .icon svg path {
+  color: var(--base-clr);
+}
+.autoplay-component1 .autoplay-component-item .auto-title {
+  font-size: 18px;
+  font-weight: 600;
+  display: block;
+  color: var(--black-clr);
+}
+.autoplay-component1 .autoplay-component-item:hover {
+  box-shadow: rgba(100, 100, 111, 0.096) 0px 7px 29px 0px;
+  border-color: var(--base-clr);
 }/*# sourceMappingURL=main.css.map */

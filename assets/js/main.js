@@ -1,23 +1,32 @@
-
-
-
 $(document).ready(() => {
-  "use strict";
-    
+	"use strict";
 
+	const progressContainer = document.querySelector(".progress-container");
 
+	// initial call
+	setPercentage();
 
+	function setPercentage() {
+		const percentage =
+			progressContainer.getAttribute("data-percentage") + "%";
 
-    //--== Aos Animation ==--//
-    $(document).ready(function () {
-      AOS.init({
-        once: true,
-      });      
-    });
-    //--== Aos Animation ==--//
+		const progressEl = progressContainer.querySelector(".progress");
+		const percentageEl = progressContainer.querySelector(".percentage");
 
-    //--== Nice Select ==--//
-    $('select').niceSelect();
-    //--== Nice Select ==--//
+		progressEl.style.width = percentage;
+		percentageEl.innerText = percentage;
+		percentageEl.style.left = percentage;
+	}
 
+	//--== Aos Animation ==--//
+	$(document).ready(function () {
+		AOS.init({
+			once: true,
+		});
+	});
+	//--== Aos Animation ==--//
+
+	//--== Nice Select ==--//
+	$("select").niceSelect();
+	//--== Nice Select ==--//
 });
