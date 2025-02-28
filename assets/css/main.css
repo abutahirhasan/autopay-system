@@ -894,19 +894,12 @@ iframe {
 }
 .autoplay-component1 .autoplay-component-item .icon {
   margin-bottom: 14px;
-  width: 120px;
-  height: 100px;
 }
 .autoplay-component1 .autoplay-component-item .icon svg {
   width: 50px;
 }
 .autoplay-component1 .autoplay-component-item .icon svg path {
   color: var(--base-clr);
-}
-.autoplay-component1 .autoplay-component-item .icon img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
 }
 .autoplay-component1 .autoplay-component-item .auto-title {
   font-size: 18px;
@@ -917,6 +910,44 @@ iframe {
 .autoplay-component1 .autoplay-component-item:hover {
   box-shadow: rgba(100, 100, 111, 0.096) 0px 7px 29px 0px;
   border-color: var(--base-clr);
+}
+
+.years-model .icon {
+  margin-bottom: 14px;
+  width: 120px;
+  height: 100px;
+}
+.years-model .icon svg {
+  width: 50px;
+}
+.years-model .icon svg path {
+  color: var(--base-clr);
+}
+.years-model .icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.pre-component svg {
+  width: 50px;
+  height: 50px;
+}
+.pre-component svg path {
+  color: var(--base-clr);
+}
+.pre-component .auto-title {
+  line-height: 24px;
+}
+
+.make-brad-component .icon {
+  width: 120px;
+  height: 100px;
+}
+.make-brad-component .icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .autoplay-component-year {
@@ -940,6 +971,52 @@ iframe {
   border-color: var(--base-clr);
 }
 
+.team-information .team-information-inner {
+  display: grid;
+  gap: 18px;
+  height: 250px;
+  overflow-y: scroll;
+  padding-right: 10px;
+}
+.team-information .team-information-inner li a {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border: 1px solid rgba(182, 172, 172, 0.3882352941);
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--black-clr);
+  display: block;
+  width: 100%;
+  padding: 11px 10px;
+  text-align: center;
+  transition: all 0.4s;
+}
+.team-information .team-information-inner li a:hover {
+  border-color: var(--base-clr);
+}
+.team-information ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+  background: rgba(92, 89, 89, 0.1450980392);
+}
+.team-information ::-webkit-scrollbar-button,
+.team-information ::-webkit-scrollbar-thumb {
+  background: var(--base-clr);
+  width: 10px;
+  height: 10px;
+}
+
+.mileage-form {
+  border: 1px solid rgba(92, 89, 89, 0.1450980392);
+  border-radius: 4px;
+}
+.mileage-form input {
+  width: 100%;
+  padding: 24px 20px;
+  outline: none;
+  border: 0;
+}
+
 .back-btn {
   background: var(--white-clr);
   border: 2px solid var(--base-clr);
@@ -958,6 +1035,12 @@ iframe {
   color: var(--white-clr);
 }
 
+.qurite-btn {
+  border-color: rgba(92, 89, 89, 0.0901960784);
+  background: var(--white-clr);
+  color: var(--base-clr);
+}
+
 .show-more {
   font-size: 16px;
   text-align: center;
@@ -974,4 +1057,55 @@ iframe {
 }
 .secure-lock i {
   color: var(--base-clr);
+}
+
+.autoplay-form-section .autoplay-grp .label-title {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--black-clr);
+  margin-bottom: 8px;
+}
+.autoplay-form-section .autoplay-grp input {
+  width: 100%;
+  padding: 17px 20px;
+  border: 1px solid rgba(92, 89, 89, 0.3098039216);
+  outline: none;
+  font-size: 15px;
+  color: rgba(92, 89, 89, 0.6235294118);
+  font-weight: 500;
+  border-radius: 0;
+  width: 100%;
+}
+.autoplay-form-section .autoplay-grp ::placeholder {
+  color: rgba(92, 89, 89, 0.6235294118);
+  font-weight: 500;
+}
+.autoplay-form-section .autoplay-grp .nice-select {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 0;
+  border: 1px solid rgba(92, 89, 89, 0.3098039216);
+  height: initial;
+}
+.autoplay-form-section .autoplay-grp .nice-select .current {
+  font-size: 16px;
+  color: rgba(92, 89, 89, 0.6235294118);
+  font-weight: 500;
+}
+.autoplay-form-section .autoplay-grp .nice-select .list {
+  width: 100%;
+}
+.autoplay-form-section .autoplay-grp .nice-select::after {
+  right: 22px;
+  width: 10px;
+  height: 10px;
+}
+.autoplay-form-section .the-application-pragraph {
+  font-size: 16px;
+  color: rgba(92, 89, 89, 0.6235294118);
+  font-weight: 500;
+}
+.autoplay-form-section .selecting-pragraph {
+  font-size: 14px;
+  color: #707377;
 }/*# sourceMappingURL=main.css.map */

@@ -72,13 +72,6 @@
 					color: var(--base-clr);
 				}
 			}
-			width: 120px;
-            height: 100px;
-			img {
-				width: 100%;
-                height: 100%;
-                object-fit: contain;
-			}
 		}
 		.auto-title {
 			font-size: 18px;
@@ -89,6 +82,47 @@
 		&:hover {
 			box-shadow: rgba(100, 100, 111, 0.096) 0px 7px 29px 0px;
 			border-color: var(--base-clr);
+		}
+	}
+}
+.years-model {
+	.icon {
+		margin-bottom: 14px;
+		svg {
+			width: 50px;
+			path {
+				color: var(--base-clr);
+			}
+		}
+		width: 120px;
+		height: 100px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+}
+.pre-component {
+	svg {
+		width: 50px;
+		height: 50px;
+		path {
+			color: var(--base-clr);
+		}
+	}
+	.auto-title {
+		line-height: 24px;
+	}
+}
+.make-brad-component {
+	.icon {
+		width: 120px;
+		height: 100px;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
 		}
 	}
 }
@@ -117,6 +151,58 @@
 }
 //Years style
 
+//team-information
+.team-information {
+	.team-information-inner {
+		display: grid;
+		gap: 18px;
+		height: 250px;
+		overflow-y: scroll;
+		padding-right: 10px;
+		li {
+			a {
+				box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+				border: 1px solid #b6acac63;
+				border-radius: 4px;
+				font-size: 16px;
+				font-weight: 600;
+				color: var(--black-clr);
+				display: block;
+				width: 100%;
+				padding: 11px 10px;
+				text-align: center;
+				transition: all 0.4s;
+				&:hover {
+					border-color: var(--base-clr);
+				}
+			}
+		}
+	}
+	// Custom Dropdown
+	::-webkit-scrollbar {
+		width: 10px;
+		height: 10px;
+		background: #5c595925;
+	}
+	::-webkit-scrollbar-button,
+	::-webkit-scrollbar-thumb {
+		background: var(--base-clr);
+		width: 10px;
+		height: 10px;
+	}
+}
+.mileage-form {
+	border: 1px solid #5c595925;
+	border-radius: 4px;
+	input {
+		width: 100%;
+		padding: 24px 20px;
+		outline: none;
+		border: 0;
+	}
+}
+//team-information
+
 .back-btn {
 	background: var(--white-clr);
 	border: 2px solid var(--base-clr);
@@ -133,6 +219,11 @@
 		background: var(--base-clr);
 		color: var(--white-clr);
 	}
+}
+.qurite-btn {
+	border-color: #5c595917;
+	background: var(--white-clr);
+	color: var(--base-clr);
 }
 .show-more {
 	font-size: 16px;
@@ -153,3 +244,60 @@
 	}
 }
 //Lock Style
+
+//autoplay-form-section
+.autoplay-form-section {
+	.autoplay-grp {
+		.label-title {
+			font-size: 16px;
+			font-weight: 500;
+			color: var(--black-clr);
+			margin-bottom: 8px;
+		}
+		input {
+			width: 100%;
+			padding: 17px 20px;
+			border: 1px solid #5c59594f;
+			outline: none;
+			font-size: 15px;
+			color: #5c59599f;
+			font-weight: 500;
+			border-radius: 0;
+			width: 100%;
+		}
+		::placeholder {
+			color: #5c59599f;
+			font-weight: 500;
+		}
+		.nice-select {
+			width: 100%;
+			padding: 10px 20px;
+            border-radius: 0;
+			border: 1px solid #5c59594f;
+            height: initial;
+            .current{
+                font-size: 16px;
+                color: #5c59599f;
+                font-weight: 500;
+            }
+            .list{
+                width: 100%;
+            }
+            &::after{
+                right: 22px;
+                width: 10px;
+                height: 10px;
+            }
+		}
+	}
+    .the-application-pragraph{
+        font-size: 16px;
+        color: #5c59599f;
+        font-weight: 500;
+    }
+    .selecting-pragraph{
+        font-size: 14px;
+        color: #707377;
+    }
+}
+//autoplay-form-section
