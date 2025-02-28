@@ -72,6 +72,13 @@
 					color: var(--base-clr);
 				}
 			}
+			width: 120px;
+            height: 100px;
+			img {
+				width: 100%;
+                height: 100%;
+                object-fit: contain;
+			}
 		}
 		.auto-title {
 			font-size: 18px;
@@ -109,6 +116,32 @@
 	}
 }
 //Years style
+
+.back-btn {
+	background: var(--white-clr);
+	border: 2px solid var(--base-clr);
+	border-radius: 4px;
+	padding: 7px 30px 10px;
+	width: 280px;
+	font-size: 16px;
+	font-weight: 500;
+	text-align: center;
+	color: var(--black-clr);
+	display: inline-block;
+	transition: all 0.4s;
+	&:hover {
+		background: var(--base-clr);
+		color: var(--white-clr);
+	}
+}
+.show-more {
+	font-size: 16px;
+	text-align: center;
+	color: var(--base-clr);
+	font-weight: 600;
+	display: block;
+	margin-bottom: 15px;
+}
 
 //Lock Style
 .secure-lock {
