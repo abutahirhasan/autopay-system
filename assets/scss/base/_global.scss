@@ -179,15 +179,4 @@ iframe {
 	width: 100%;
 }
 
-// Custom Dropdown
-::-webkit-scrollbar {
-	width: 7px;
-	height: 7px;
-	background: #5c595925;
-}
-::-webkit-scrollbar-button,
-::-webkit-scrollbar-thumb {
-	background: var(--base-clr);
-	width: 7px;
-	height: 7px;
-}
+

@@ -835,19 +835,6 @@ iframe {
   width: 100%;
 }
 
-::-webkit-scrollbar {
-  width: 7px;
-  height: 7px;
-  background: rgba(92, 89, 89, 0.1450980392);
-}
-
-::-webkit-scrollbar-button,
-::-webkit-scrollbar-thumb {
-  background: var(--base-clr);
-  width: 7px;
-  height: 7px;
-}
-
 .global-section {
   background: var(--white-clr);
   padding: 60px 0 40px;
@@ -977,6 +964,10 @@ iframe {
 .make-brad-component .auto-title {
   color: var(--black-clr) !important;
 }
+.make-brad-component .autoplay-component-item {
+  position: relative;
+  overflow: hidden;
+}
 
 .custom-tooltip {
   background: transparent;
@@ -1067,16 +1058,14 @@ iframe {
 .team-information .team-information-inner li a:hover {
   border-color: var(--base-clr);
 }
-.team-information ::-webkit-scrollbar {
-  width: 10px;
-  height: 10px;
-  background: rgba(92, 89, 89, 0.1450980392);
-}
 .team-information ::-webkit-scrollbar-button,
 .team-information ::-webkit-scrollbar-thumb {
   background: var(--base-clr);
   width: 10px;
-  height: 10px;
+  height: 0px;
+}
+.team-information ::-webkit-scrollbar-thumb {
+  background: var(--base-clr);
 }
 
 .mileage-form {
@@ -1088,6 +1077,9 @@ iframe {
   padding: 24px 20px;
   outline: none;
   border: 0;
+}
+.mileage-form :focus {
+  box-shadow: 0 0 0 0.2rem rgba(81, 155, 173, 0.5);
 }
 
 .back-btn {
@@ -1109,9 +1101,12 @@ iframe {
 }
 
 .qurite-btn {
-  border-color: rgba(92, 89, 89, 0.0901960784);
+  border-color: #b6b6b7;
   background: var(--white-clr);
   color: var(--base-clr);
+}
+.qurite-btn:hover {
+  box-shadow: 0 0 0 0.2rem rgba(81, 155, 173, 0.5);
 }
 
 .signin-btn {
@@ -1154,6 +1149,37 @@ iframe {
   }
 }
 
+.modal-content {
+  max-width: 370px;
+}
+.modal-content .accept-btn {
+  color: #b6b6b7;
+  font-weight: 700;
+  font-size: 16px;
+  padding: 6px 14px 8px;
+  border: 1px solid #b6b6b7;
+  transition: all 0.4s;
+  border-radius: 4px;
+}
+.modal-content .accept-btn:hover {
+  color: var(--white-clr);
+  background: var(--base-clr);
+  box-shadow: 0 0 0 0.2rem rgba(81, 155, 173, 0.5);
+  border-color: rgb(81, 155, 173);
+}
+
+.hidden {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
+  display: block;
+}
+
+.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
 .secure-lock {
   font-size: 16px;
   font-weight: 400;
@@ -1179,6 +1205,9 @@ iframe {
   font-weight: 500;
   border-radius: 0;
   width: 100%;
+}
+.autoplay-form-section .autoplay-grp :focus {
+  box-shadow: 0 0 0 0.2rem rgba(81, 155, 173, 0.3);
 }
 .autoplay-form-section .autoplay-grp ::placeholder {
   color: #495057;
@@ -1212,6 +1241,12 @@ iframe {
 .autoplay-form-section .selecting-pragraph {
   font-size: 14px;
   color: #707377;
+}
+
+.required-text {
+  color: #dc3545;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .footer-section {

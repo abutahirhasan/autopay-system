@@ -16,6 +16,16 @@ $(document).ready(() => {
 		percentageEl.style.left = percentage;
 	}
 
+	//Card Open
+window.addEventListener("load", function () {
+	setTimeout(() => {
+		const elements = document.querySelectorAll(".autoplay-component-item"); // Select all elements
+		elements.forEach((element) => {
+			element.classList.add("show"); // Add 'show' class to each element
+		});
+	}, 1200); // 1.2 seconds delay
+});
+
 	//Bootstrap Tooltip
 	var tooltipTriggerList = [].slice.call(
 		document.querySelectorAll('[data-bs-toggle="tooltip"]')
