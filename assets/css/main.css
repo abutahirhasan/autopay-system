@@ -847,7 +847,7 @@ iframe {
 
 .progress-container,
 .progress {
-  background: #c2c2c2;
+  background: #e9ecef;
   position: relative;
   border-radius: 100px;
   height: 16px;
@@ -1298,4 +1298,10 @@ iframe {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+@media screen and (min-width: 1199px) {
+  .footer-one {
+    position: absolute;
+  }
 }/*# sourceMappingURL=main.css.map */
