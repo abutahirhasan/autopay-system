@@ -2,7 +2,7 @@
 html {
 	scroll-behavior: initial !important;
 }
-	//Body Default Style
+//Body Default Style
 body {
 	font-size: 18px;
 	line-height: 150%;
@@ -18,7 +18,7 @@ footer {
 	overflow: hidden;
 }
 //Tag Default Style
-a, 
+a,
 p,
 button,
 span,
@@ -26,7 +26,7 @@ label,
 li {
 	margin: 0;
 	font-weight: 400;
-	i{
+	i {
 		font-weight: 400;
 	}
 }
@@ -35,11 +35,12 @@ a {
 	text-decoration: none;
 	outline: none;
 	transition: all 0.4s;
-	&:focus, &:hover {
+	&:focus,
+	&:hover {
 		text-decoration: none;
 		outline: none;
 	}
-	i{
+	i {
 		font-weight: 400;
 	}
 }
@@ -56,19 +57,25 @@ h5,
 h5 > a,
 h6,
 h6 > a,
-.display-one, .display-two, .display-three, .display-four, .display-five, .display-six, .heading{
+.display-one,
+.display-two,
+.display-three,
+.display-four,
+.display-five,
+.display-six,
+.heading {
 	padding: 0;
 	margin: 0;
 	line-height: 128%;
 	display: block;
 	transition: all 0.4s;
-	span{
+	span {
 		font-size: inherit;
 		color: inherit;
 		line-height: inherit;
 		font-weight: inherit;
 	}
-	i{
+	i {
 		font-weight: 400;
 		transition: all 0.4s;
 	}
@@ -84,7 +91,7 @@ ol {
 	padding: 0;
 	margin: 0;
 	list-style: none;
-	li{
+	li {
 		font-size: inherit;
 		font-weight: inherit;
 	}
@@ -109,7 +116,7 @@ textarea {
 	&::placeholder {
 		font-size: 16px;
 	}
-	&:focus{
+	&:focus {
 		box-shadow: none;
 		border: 1px solid transparent;
 	}
@@ -118,7 +125,7 @@ textarea {
 	font-size: 14px;
 }
 
-// input custom 
+// input custom
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
 	-webkit-appearance: none;
@@ -134,20 +141,20 @@ input[type="checkbox"] {
 
 //Color Custom Css
 span,
-p{
+p {
 	line-height: 150%;
 	font-size: 16px;
 	transition: all 0.4s;
 }
 
 // ul custom
-.ul-dots{
-	li{
+.ul-dots {
+	li {
 		list-style: disc;
 	}
 }
-.ul-decimal{
-	li{
+.ul-decimal {
+	li {
 		list-style: decimal;
 	}
 }
@@ -155,7 +162,7 @@ p{
 span {
 	display: inline-block;
 }
-.transition{
+.transition {
 	transition: 0.5s;
 }
 //Table Style Css
@@ -166,17 +173,21 @@ span {
 	border: none;
 }
 
-//Iframe Style 
+//Iframe Style
 iframe {
 	border: 0;
 	width: 100%;
 }
 
-// Custom Dropdown 
-*::-webkit-scrollbar {
-	width: 0px;
+// Custom Dropdown
+::-webkit-scrollbar {
+	width: 7px;
+	height: 7px;
+	background: #5c595925;
 }
-*::-webkit-scrollbar-button,
-*::-webkit-scrollbar-thumb {
-	background: red;
+::-webkit-scrollbar-button,
+::-webkit-scrollbar-thumb {
+	background: var(--base-clr);
+	width: 7px;
+	height: 7px;
 }

@@ -678,7 +678,13 @@ h5,
 h5 > a,
 h6,
 h6 > a,
-.display-one, .display-two, .display-three, .display-four, .display-five, .display-six, .heading {
+.display-one,
+.display-two,
+.display-three,
+.display-four,
+.display-five,
+.display-six,
+.heading {
   padding: 0;
   margin: 0;
   line-height: 128%;
@@ -697,7 +703,13 @@ h5 span,
 h5 > a span,
 h6 span,
 h6 > a span,
-.display-one span, .display-two span, .display-three span, .display-four span, .display-five span, .display-six span, .heading span {
+.display-one span,
+.display-two span,
+.display-three span,
+.display-four span,
+.display-five span,
+.display-six span,
+.heading span {
   font-size: inherit;
   color: inherit;
   line-height: inherit;
@@ -715,7 +727,13 @@ h5 i,
 h5 > a i,
 h6 i,
 h6 > a i,
-.display-one i, .display-two i, .display-three i, .display-four i, .display-five i, .display-six i, .heading i {
+.display-one i,
+.display-two i,
+.display-three i,
+.display-four i,
+.display-five i,
+.display-six i,
+.heading i {
   font-weight: 400;
   transition: all 0.4s;
 }
@@ -817,13 +835,17 @@ iframe {
   width: 100%;
 }
 
-*::-webkit-scrollbar {
-  width: 0px;
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+  background: rgba(92, 89, 89, 0.1450980392);
 }
 
-*::-webkit-scrollbar-button,
-*::-webkit-scrollbar-thumb {
-  background: red;
+::-webkit-scrollbar-button,
+::-webkit-scrollbar-thumb {
+  background: var(--base-clr);
+  width: 7px;
+  height: 7px;
 }
 
 .global-section {
@@ -986,11 +1008,13 @@ iframe {
   background-color: #333 !important;
 }
 
+.label-title svg,
 .heading-subtitle svg {
-  width: 16px;
-  height: 16px;
-  margin-top: -4px;
+  width: 15px;
+  height: 15px;
+  margin-top: -5px;
 }
+.label-title svg path,
 .heading-subtitle svg path {
   fill: #707377;
 }
@@ -1151,13 +1175,13 @@ iframe {
   border: 1px solid rgba(92, 89, 89, 0.3098039216);
   outline: none;
   font-size: 15px;
-  color: rgba(92, 89, 89, 0.6235294118);
+  color: #495057;
   font-weight: 500;
   border-radius: 0;
   width: 100%;
 }
 .autoplay-form-section .autoplay-grp ::placeholder {
-  color: rgba(92, 89, 89, 0.6235294118);
+  color: #495057;
   font-weight: 500;
 }
 .autoplay-form-section .autoplay-grp .nice-select {
