@@ -2,10 +2,8 @@ $(document).ready(() => {
 	"use strict";
 
 	const progressContainer = document.querySelector(".progress-container");
-
 	// initial call
 	setPercentage();
-
 	function setPercentage() {
 		const percentage =
 			progressContainer.getAttribute("data-percentage") + "%";
@@ -17,6 +15,14 @@ $(document).ready(() => {
 		percentageEl.innerText = percentage;
 		percentageEl.style.left = percentage;
 	}
+
+	//Bootstrap Tooltip
+	var tooltipTriggerList = [].slice.call(
+		document.querySelectorAll('[data-bs-toggle="tooltip"]')
+	);
+	var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+		return new bootstrap.Tooltip(tooltipTriggerEl);
+	});
 
 	//--== Aos Animation ==--//
 	$(document).ready(function () {

@@ -27,31 +27,45 @@
 
 <body>
 
-    <!-- Header -->
-    <header class="header-section d-flex align-items-center justify-content-between px-md-10 px-sm-6 px-4 pt-5">
-        <a href="index.html" class="logo">
-            <img src="assets/images/autopay-logo.svg" alt="img">
-        </a>
-        <a href="#" class="signin-btn">
-            Sign in
-        </a>
-    </header>
-    <!-- Header -->
-
     <!-- Main -->
     <main class="main">
+
+
+        <!-- Header -->
+        <header class="header-section d-flex align-items-center justify-content-between px-md-10 px-sm-6 px-4 pt-4">
+            <a href="index.html" class="logo">
+                <img src="assets/images/autopay-logo.svg" alt="img">
+            </a>
+            <a href="#" class="signin-btn">
+                Sign in
+            </a>
+        </header>
+        <!-- Header -->
 
         <!-- Global Section -->
         <section class="global-section">
             <div class="container">
-                <div class="progress-container-wrap mb-xxl-12 mb-xl-10 mb-lg-9 mb-md-7 mb-sm-6 mb-5">
+                <div class="progress-container-wrap mb-xxl-10 mb-xl-10 mb-lg-9 mb-md-7 mb-sm-6 mb-5">
                     <div class="progress-container" data-percentage='20'>
                         <div class="progress"></div>
                         <div class="percentage">0%</div>
                     </div>
                 </div>
-                <h4 class="head-title mb-mb-8 mb-sm-6 mb-5 text-center">What is the make of your vehicle?</h4>
-                <div class="autoplay-component1">
+                <h4 class="head-title mb-mb-8 mb-sm-6 mb-5 text-center">
+                    What is the make of your vehicle?
+                    <button type="button" class="pt-3" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip"
+                        data-bs-title="The model of your vehicle is referring to the vehicle's name or range of products. Please call 1-844-276-3272">
+                        <svg width="24" height="24" aria-hidden="true" focusable="false" data-prefix="fas"
+                            data-icon="info-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                            class="svg-inline--fa fa-info-circle">
+                            <path fill="currentColor"
+                                d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
+                            </path>
+                        </svg>
+                    </button>
+                </h4>
+                <div class="autoplay-component1 cars-model-inner">
                     <div class="row g-4 mb-xxl-12 mb-xl-10 mb-lg-8 mb-7">
                         <div class="col-sm-6 col-md-6 col-lg-4">
                             <a href="trim.html" class="autoplay-component-item">
@@ -181,7 +195,7 @@
                         Back
                     </a>
                 </div>
-                <div class="secure-lock d-flex gap-3 align-items-center justify-content-center mt-8">
+                <div class="secure-lock d-flex gap-3 align-items-center justify-content-center mt-6">
                     <i class="fa-solid fa-lock"></i> Your information is secured
                 </div>
             </div>

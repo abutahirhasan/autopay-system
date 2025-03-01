@@ -40,6 +40,7 @@
   --white-clr: #fff;
   --black-clr: #000;
   --base-clr: #519bad;
+  --title-clr: #6c757d;
 }
 
 .display-one {
@@ -827,7 +828,7 @@ iframe {
 
 .global-section {
   background: var(--white-clr);
-  padding: 120px 0;
+  padding: 60px 0 40px;
 }
 
 .progress-container-wrap {
@@ -840,7 +841,7 @@ iframe {
   background: #ebebeb;
   position: relative;
   border-radius: 100px;
-  height: 20px;
+  height: 16px;
 }
 
 .progress {
@@ -856,12 +857,12 @@ iframe {
   font-size: 14px;
   font-weight: 600;
   box-shadow: rgba(73, 73, 75, 0.2) 0px 7px 29px 0px;
-  padding: 4px 2px 7px;
+  padding: 3px 2px 7px;
   position: absolute;
   bottom: 150%;
   left: 0;
   transform: translateX(-50%);
-  width: 45px;
+  width: 40px;
   text-align: center;
   transition: left 0.4s linear;
 }
@@ -883,29 +884,31 @@ iframe {
   margin: 0 auto;
 }
 .autoplay-component1 .autoplay-component-item {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  padding: 35px 18px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 30px 18px;
   background: var(--white-clr);
   border-radius: 4px;
   text-align: center;
   transition: all 0.4s;
-  border: 1px solid var(--white-clr);
   display: block;
+  height: 100%;
 }
 .autoplay-component1 .autoplay-component-item .icon {
   margin-bottom: 14px;
 }
 .autoplay-component1 .autoplay-component-item .icon svg {
-  width: 50px;
+  width: 40px;
+  height: 30px;
 }
 .autoplay-component1 .autoplay-component-item .icon svg path {
   color: var(--base-clr);
 }
 .autoplay-component1 .autoplay-component-item .auto-title {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 17px;
+  font-weight: 700;
   display: block;
-  color: var(--black-clr);
+  color: var(--title-clr);
 }
 .autoplay-component1 .autoplay-component-item:hover {
   box-shadow: rgba(100, 100, 111, 0.096) 0px 7px 29px 0px;
@@ -941,28 +944,74 @@ iframe {
 }
 
 .make-brad-component .icon {
-  width: 120px;
-  height: 100px;
+  width: 100px;
+  height: 60px;
 }
 .make-brad-component .icon img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
+.make-brad-component .auto-title {
+  color: var(--black-clr) !important;
+}
+
+.custom-tooltip {
+  background: transparent;
+}
+
+.head-title {
+  /* Change the tooltip background and text color */
+  /* Change tooltip arrow color */
+}
+.head-title svg {
+  width: 16px;
+  height: 16px;
+  margin-top: -20px;
+}
+.head-title svg path {
+  fill: #707377;
+}
+.head-title .custom-tooltip .tooltip-inner {
+  background-color: #333 !important; /* Dark background */
+  color: #fff !important; /* White text */
+  max-width: 300px !important; /* Adjust width */
+  padding: 8px 12px; /* Increase padding for better readability */
+  border-radius: 6px; /* Rounded corners */
+  text-align: center; /* Center align text */
+  white-space: normal; /* Allow text to wrap */
+  word-wrap: break-word; /* Break long words */
+}
+.head-title .custom-tooltip .tooltip-arrow::before {
+  background-color: #333 !important;
+}
+
+.heading-subtitle svg {
+  width: 16px;
+  height: 16px;
+  margin-top: -4px;
+}
+.heading-subtitle svg path {
+  fill: #707377;
+}
+
+.cars-model-inner .autoplay-component-item .auto-title {
+  color: var(--black-clr);
+}
 
 .autoplay-component-year {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  padding: 24px 18px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  padding: 20px 18px;
   background: var(--white-clr);
   border-radius: 4px;
   text-align: center;
   transition: all 0.4s;
-  border: 1px solid var(--white-clr);
   display: block;
 }
 .autoplay-component-year .auto-title {
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 700;
   display: block;
   color: var(--black-clr);
 }
@@ -1019,20 +1068,20 @@ iframe {
 
 .back-btn {
   background: var(--white-clr);
-  border: 2px solid var(--base-clr);
+  border: 1px solid var(--base-clr);
   border-radius: 4px;
   padding: 7px 30px 10px;
   width: 280px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
   text-align: center;
-  color: var(--black-clr);
+  color: var(--base-clr);
   display: inline-block;
   transition: all 0.4s;
 }
 .back-btn:hover {
-  background: var(--base-clr);
-  color: var(--white-clr);
+  color: var(--base-clr);
+  box-shadow: 0 0 0 0.2rem var(--base-clr);
 }
 
 .qurite-btn {
@@ -1047,9 +1096,9 @@ iframe {
   color: var(--base-clr);
   border: 1px solid var(--base-clr);
   border-radius: 4px;
-  padding: 7px 24px 10px;
+  padding: 6px 20px 9px;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
   text-align: center;
   display: inline-block;
   transition: all 0.4s;
@@ -1069,16 +1118,21 @@ iframe {
 }
 
 .logo {
-  max-width: 160px;
+  max-width: 193px;
   display: block;
 }
 .logo img {
   width: 100%;
 }
+@media screen and (max-width: 1199px) {
+  .logo {
+    max-width: 120px;
+  }
+}
 
 .secure-lock {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 400;
   color: #5c5959;
 }
 .secure-lock i {
@@ -1174,4 +1228,15 @@ iframe {
   width: 1px;
   height: 12px;
   background: var(--base-clr);
+}
+
+.h100vh {
+  height: 100vh;
+}
+
+.custom-vh {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }/*# sourceMappingURL=main.css.map */
