@@ -1039,6 +1039,10 @@ iframe {
   border-color: var(--base-clr);
 }
 
+.team-information {
+  /* Up arrow */
+  /* Down arrow */
+}
 .team-information .team-information-inner {
   display: grid;
   gap: 18px;
@@ -1062,19 +1066,46 @@ iframe {
 .team-information .team-information-inner li a:hover {
   border-color: var(--base-clr);
 }
-.team-information ::-webkit-scrollbar-button,
-.team-information ::-webkit-scrollbar-thumb {
-  background: var(--base-clr);
-  width: 10px;
-  height: 0px;
+.team-information .team-information-inner::-webkit-scrollbar {
+  height: 10px;
+  width: 11px;
 }
-.team-information ::-webkit-scrollbar-thumb {
+.team-information .team-information-inner::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.team-information .team-information-inner::-webkit-scrollbar-thumb {
+  border: 2px solid #f1f1f1;
   background: var(--base-clr);
+}
+.team-information .team-information-inner::-webkit-scrollbar-thumb:hover {
+  background: var(--base-clr);
+}
+.team-information .team-information-inner::-webkit-scrollbar-button:single-button {
+  background-color: #f1f1f1;
+  display: block;
+  border-style: solid;
+  height: 10px;
+  width: 12px;
+}
+.team-information .team-information-inner::-webkit-scrollbar-button:single-button:vertical:decrement {
+  border-width: 0 6px 6px 6px;
+  border-color: transparent transparent #888 transparent;
+}
+.team-information .team-information-inner::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+  border-color: transparent transparent #555 transparent;
+}
+.team-information .team-information-inner::-webkit-scrollbar-button:single-button:vertical:increment {
+  border-width: 6px 6px 0 6px;
+  border-color: #888 transparent transparent transparent;
+}
+.team-information .team-information-inner::-webkit-scrollbar-button:single-button:vertical:increment:hover {
+  border-color: #555 transparent transparent transparent;
 }
 
 .mileage-form {
   border: 1px solid rgba(92, 89, 89, 0.1450980392);
   border-radius: 4px;
+  position: relative;
 }
 .mileage-form input {
   width: 100%;
@@ -1084,6 +1115,39 @@ iframe {
 }
 .mileage-form :focus {
   box-shadow: 0 0 0 0.2rem rgba(81, 155, 173, 0.5);
+}
+.mileage-form p {
+  position: absolute !important;
+  bottom: -30px;
+  left: 0;
+}
+
+.hidden-item {
+  display: none;
+}
+
+.hidable-btn {
+  color: var(--white-clr);
+  cursor: pointer;
+  background-color: var(--base-clr);
+  border: 1px solid var(--base-clr);
+  font-weight: 900;
+  padding: 6px 10px 11px;
+  transition: all 0.4s;
+}
+.hidable-btn.active {
+  border-color: var(--base-clr);
+  color: var(--base-clr);
+  background: var(--white-clr);
+}
+
+.hidable-btn.disabled {
+  color: #9b9b9c;
+  cursor: not-allowed;
+  background-color: #eeeeef;
+  border: 1px solid #eeeeef;
+  font-weight: 900;
+  opacity: 0.65;
 }
 
 .back-btn {
@@ -1165,7 +1229,7 @@ iframe {
   transition: all 0.4s;
   border-radius: 4px;
 }
-.modal-content .accept-btn:hover {
+.modal-content .accept-btn.active, .modal-content .accept-btn:hover {
   color: var(--white-clr);
   background: var(--base-clr);
   box-shadow: 0 0 0 0.2rem rgba(81, 155, 173, 0.5);
@@ -1210,6 +1274,47 @@ iframe {
 }
 .secure-lock i {
   color: var(--base-clr);
+}
+
+.custom-form-validation {
+  /* Style for disabled button */
+  /* Style for error messages */
+}
+.custom-form-validation .active {
+  background-color: #f0f8ff; /* Light blue background */
+  border: 1px solid #007bff; /* Blue border */
+}
+.custom-form-validation .hidable-btn2 {
+  color: var(--white-clr);
+  cursor: pointer;
+  background-color: var(--base-clr);
+  border: 1px solid var(--base-clr);
+  font-weight: 900;
+  padding: 6px 10px 11px;
+  transition: all 0.4s;
+}
+.custom-form-validation .hidable-btn2.active {
+  background-color: green; /* Example style for active state */
+  color: white;
+  cursor: pointer;
+}
+.custom-form-validation .hidable-btn2.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  background-color: #ccc;
+  color: #666;
+}
+.custom-form-validation .error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.custom-form-validation .error-message {
+  margin-top: 5px;
+  font-size: 14px;
+  color: red;
+  font-weight: 700;
+  display: none; /* Hidden by default */
 }
 
 .autoplay-form-section .autoplay-grp .label-title {
@@ -1264,6 +1369,12 @@ iframe {
 .autoplay-form-section .selecting-pragraph {
   font-size: 14px;
   color: #707377;
+}
+.autoplay-form-section input:-internal-autofill-selected {
+  appearance: menulist-button;
+  background-image: none !important;
+  background-color: light-dark(rgb(232, 240, 254), rgba(70, 90, 126, 0.4)) !important;
+  color: fieldtext !important;
 }
 
 .required-text {

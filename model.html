@@ -223,6 +223,85 @@
                                 </span>
                             </a>
                         </div>
+                        <!-- Hide Items-->
+                        <div class="col-sm-6 col-md-6 col-lg-4 hidden-item">
+                            <a href="trim.html" class="autoplay-component-item hidden">
+                                <span class="loader-bg">
+                                    <span class="loader"></span>
+                                </span>
+                                <span class="icon">
+                                    <img src="assets/images/cars/car-collection.png" alt="img">
+                                </span>
+                                <span class="auto-title">
+                                    Crown
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 hidden-item">
+                            <a href="trim.html" class="autoplay-component-item hidden">
+                                <span class="loader-bg">
+                                    <span class="loader"></span>
+                                </span>
+                                <span class="icon">
+                                    <img src="assets/images/cars/car-collection.png" alt="img">
+                                </span>
+                                <span class="auto-title">
+                                    GR Corolla
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 hidden-item">
+                            <a href="trim.html" class="autoplay-component-item hidden">
+                                <span class="loader-bg">
+                                    <span class="loader"></span>
+                                </span>
+                                <span class="icon">
+                                    <img src="assets/images/cars/car-collection.png" alt="img">
+                                </span>
+                                <span class="auto-title">
+                                    GR Supra
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 hidden-item">
+                            <a href="trim.html" class="autoplay-component-item hidden">
+                                <span class="loader-bg">
+                                    <span class="loader"></span>
+                                </span>
+                                <span class="icon">
+                                    <img src="assets/images/cars/car-collection.png" alt="img">
+                                </span>
+                                <span class="auto-title">
+                                    GR86
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 hidden-item">
+                            <a href="trim.html" class="autoplay-component-item hidden">
+                                <span class="loader-bg">
+                                    <span class="loader"></span>
+                                </span>
+                                <span class="icon">
+                                    <img src="assets/images/cars/car-collection.png" alt="img">
+                                </span>
+                                <span class="auto-title">
+                                    Grand Highlander
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-4 hidden-item">
+                            <a href="trim.html" class="autoplay-component-item hidden">
+                                <span class="loader-bg">
+                                    <span class="loader"></span>
+                                </span>
+                                <span class="icon">
+                                    <img src="assets/images/cars/car-collection.png" alt="img">
+                                </span>
+                                <span class="auto-title">
+                                    Highlander
+                                </span>
+                            </a>
+                        </div>
                     </div>
                     <a href="#" class="show-more">Show More</a>
                 </div>
@@ -296,6 +375,32 @@
     <script src="assets/js/plugins/jquery.nice-select.min.js"></script>
     <!-- Custom Script -->
     <script src="assets/js/main.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const showMoreButton = document.querySelector('.show-more');
+            const hiddenItems = document.querySelectorAll('.hidden-item');
+            let isHidden = true;
+
+            showMoreButton.addEventListener('click', function (event) {
+                event.preventDefault(); // Prevent the default link behavior
+
+                if (isHidden) {
+                    hiddenItems.forEach(item => {
+                        item.style.display = 'block'; // Show the hidden items
+                    });
+                    showMoreButton.textContent = 'Show Less';
+                } else {
+                    hiddenItems.forEach(item => {
+                        item.style.display = 'none'; // Hide the items again
+                    });
+                    showMoreButton.textContent = 'Show More';
+                }
+
+                isHidden = !isHidden; // Toggle the state
+            });
+        });
+    </script>
 
 </body>
 

@@ -80,6 +80,7 @@
                                 <form action="#" class="mileage-form">
                                     <input type="number" required placeholder="Example 22,000">
                                 </form>
+                                <span class="required-text">This field is required</span>
                             </div>
                         </div>
                     </div>
@@ -160,7 +161,7 @@
                     </span>
                 </div>
                 <div class="modal-footer p-0 border-0 justify-content-center">
-                    <a href="contact.html" class="accept-btn active">Accept</a>
+                    <a href="contact.html" class="accept-btn">Accept</a>
                     <button type="button" class="accept-btn" data-bs-dismiss="modal">Change</button>
                 </div>
             </div>
@@ -177,48 +178,6 @@
     <script src="assets/js/plugins/jquery.nice-select.min.js"></script>
     <!-- Custom Script -->
     <script src="assets/js/main.js"></script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const mileageInput = document.querySelector(".mileage-form input");
-            const nextButton = document.querySelector(".hidable-btn");
-            const form = document.querySelector(".mileage-form");
-
-            // Create error message element
-            const errorMessage = document.createElement("p");
-            errorMessage.textContent = "This field is required";
-            errorMessage.style.color = "red";
-            errorMessage.style.fontSize = "14px";
-            errorMessage.style.display = "none"; // Initially hidden
-            form.appendChild(errorMessage);
-
-            // Initially disable the button
-            nextButton.classList.add("disabled");
-            nextButton.style.pointerEvents = "none"; // Prevent clicking
-
-            mileageInput.addEventListener("input", function () {
-                if (/^\d{3,}$/.test(mileageInput.value)) {
-                    nextButton.classList.remove("disabled"); // Enable button
-                    nextButton.style.pointerEvents = "auto"; // Allow clicking
-                    errorMessage.style.display = "none"; // Hide error
-                } else {
-                    nextButton.classList.add("disabled"); // Disable button
-                    nextButton.style.pointerEvents = "none"; // Prevent clicking
-                    errorMessage.style.display = "block"; // Show error
-                }
-            });
-
-            // Prevent form submission if input is invalid
-            form.addEventListener("submit", function (event) {
-                if (!/^\d{3,}$/.test(mileageInput.value)) {
-                    event.preventDefault(); // Stop form submission
-                    errorMessage.style.display = "block"; // Show error
-                }
-            });
-        });
-
-    </script>
-
 
 </body>
 

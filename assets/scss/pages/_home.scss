@@ -236,20 +236,47 @@
 			}
 		}
 	}
-	// Custom Dropdown
-	::-webkit-scrollbar {
-		// width: 10px;
-		// height: 0px;
-		// background: #5c595925;
+	// scrollbar-width: thin;
+	.team-information-inner::-webkit-scrollbar {
+		height: 10px;
+		width: 11px;
 	}
-	::-webkit-scrollbar-button,
-	::-webkit-scrollbar-thumb {
-		background: var(--base-clr);
-		width: 10px;
-		height: 0px;
+
+	.team-information-inner::-webkit-scrollbar-track {
+		background: #f1f1f1;
 	}
-	::-webkit-scrollbar-thumb {
+
+	.team-information-inner::-webkit-scrollbar-thumb {
+		border: 2px solid #f1f1f1;
 		background: var(--base-clr);
+	}
+
+	.team-information-inner::-webkit-scrollbar-thumb:hover {
+		background: var(--base-clr);
+	}
+	.team-information-inner::-webkit-scrollbar-button:single-button {
+		background-color: #f1f1f1;
+		display: block;
+		border-style: solid;
+		height: 10px;
+		width: 12px;
+	}
+
+	/* Up arrow */
+	.team-information-inner::-webkit-scrollbar-button:single-button:vertical:decrement {
+		border-width: 0 6px 6px 6px;
+		border-color: transparent transparent #888 transparent;
+	}
+	.team-information-inner::-webkit-scrollbar-button:single-button:vertical:decrement:hover {
+		border-color: transparent transparent #555 transparent;
+	}
+	/* Down arrow */
+	.team-information-inner::-webkit-scrollbar-button:single-button:vertical:increment {
+		border-width: 6px 6px 0 6px;
+		border-color: #888 transparent transparent transparent;
+	}
+	.team-information-inner::-webkit-scrollbar-button:single-button:vertical:increment:hover {
+		border-color: #555 transparent transparent transparent;
 	}
 }
 .mileage-form {
@@ -264,9 +291,43 @@
 	:focus {
 		box-shadow: 0 0 0 0.2rem rgba(81, 155, 173, 0.5);
 	}
+	position: relative;
+	p {
+		position: absolute !important;
+		bottom: -30px;
+		left: 0;
+	}
 }
 //team-information
 
+//hidden-item
+.hidden-item{
+	display: none;
+}
+//hidden-item
+
+.hidable-btn {
+	color: var(--white-clr);
+	cursor: pointer;
+	background-color: var(--base-clr);
+	border: 1px solid var(--base-clr);
+	font-weight: 900;
+	padding: 6px 10px 11px;
+	transition: all 0.4s;
+	&.active {
+		border-color: var(--base-clr);
+		color: var(--base-clr);
+		background: var(--white-clr);
+	}
+}
+.hidable-btn.disabled {
+	color: #9b9b9c;
+	cursor: not-allowed;
+	background-color: #eeeeef;
+	border: 1px solid #eeeeef;
+	font-weight: 900;
+	opacity: 0.65;
+}
 .back-btn {
 	background: var(--white-clr);
 	border: 1px solid var(--base-clr);
@@ -337,6 +398,7 @@
 		border: 1px solid #b6b6b7;
 		transition: all 0.4s;
 		border-radius: 4px;
+		&.active,
 		&:hover {
 			color: var(--white-clr);
 			background: var(--base-clr);
@@ -345,7 +407,7 @@
 		}
 	}
 }
-.loader-bg{
+.loader-bg {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -385,6 +447,57 @@
 	}
 }
 //Lock Style
+
+//custom Filed
+.custom-form-validation {
+	.active {
+		background-color: #f0f8ff; /* Light blue background */
+		border: 1px solid #007bff; /* Blue border */
+	}
+	.hidable-btn2 {
+		color: var(--white-clr);
+		cursor: pointer;
+		background-color: var(--base-clr);
+		border: 1px solid var(--base-clr);
+		font-weight: 900;
+		padding: 6px 10px 11px;
+		transition: all 0.4s;
+		// &.active {
+		// 	border-color: var(--base-clr);
+		// 	color: var(--base-clr);
+		// 	background: var(--white-clr);
+		// }
+	}
+	.hidable-btn2.active {
+		background-color: green; /* Example style for active state */
+		color: white;
+		cursor: pointer;
+	}
+
+	/* Style for disabled button */
+	.hidable-btn2.disabled {
+		opacity: 0.5;
+		cursor: not-allowed;
+		background-color: #ccc;
+		color: #666;
+	}
+
+	/* Style for error messages */
+	.error-message {
+		color: red;
+		font-size: 12px;
+		margin-top: 5px;
+	}
+
+	.error-message {
+		margin-top: 5px;
+		font-size: 14px;
+		color: red;
+		font-weight: 700;
+		display: none; /* Hidden by default */
+	}
+}
+//custom Filed
 
 //autoplay-form-section
 .autoplay-form-section {
@@ -442,6 +555,15 @@
 	.selecting-pragraph {
 		font-size: 14px;
 		color: #707377;
+	}
+	input:-internal-autofill-selected {
+		appearance: menulist-button;
+		background-image: none !important;
+		background-color: light-dark(
+			rgb(232, 240, 254),
+			rgba(70, 90, 126, 0.4)
+		) !important;
+		color: fieldtext !important;
 	}
 }
 .required-text {
