@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO & Meta Information -->
+    <meta name="keywords" content="boot, Bootstrap, Core-Name">
+    <meta name="description" content="Core-Name">
+    <!-- Page Title -->
+    <title>Autopay System</title>
+    <!-- Favicon/x-icon -->
+    <link rel="shortcut icon" href="assets/images/logo/fav.png" type="image/x-icon">
+    <!-- Bootstrap Css-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Nice Select Css -->
+    <link rel="stylesheet" href="assets/css/plugins/nice-select.css">
+    <!-- FontAwesome Css -->
+    <link rel="stylesheet" href="assets/css/plugins/fontawesome.min.css">
+    <!-- Aos Animation Css -->
+    <link rel="stylesheet" href="assets/css/plugins/aos.css">
+    <!-- Main Style.min.css -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <!-- Main -->
+    <main class="main">
+
+
+        <!-- Header -->
+        <header class="header-section d-flex align-items-center justify-content-between px-md-10 px-sm-6 px-4 pt-4">
+            <a href="index.html" class="logo">
+                <img src="assets/images/autopay-logo.svg" alt="img">
+            </a>
+            <a href="#" class="signin-btn">
+                Sign in
+            </a>
+        </header>
+        <!-- Header -->
+
+        <!-- Global Section -->
+        <section class="global-section">
+            <div class="container">
+                <div class="progress-container-wrap mb-xxl-10 mb-xl-10 mb-lg-9 mb-md-7 mb-sm-6 mb-5">
+                    <div class="progress-container" data-percentage='55'>
+                        <div class="progress"></div>
+                        <div class="percentage">0%</div>
+                    </div>
+                </div>
+                <h4 class="head-title mb-lg-10 mb-md-9 mb-7 text-center">
+                    Now, a little about you.
+                    <button type="button" class="pt-3" data-bs-toggle="tooltip" data-bs-placement="top"
+                        data-bs-custom-class="custom-tooltip"
+                        data-bs-title="The model of your vehicle is referring to the vehicle's name or range of products. Please call 1-844-276-3272">
+                        <svg width="24" height="24" aria-hidden="true" focusable="false" data-prefix="fas"
+                            data-icon="info-circle" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                            class="svg-inline--fa fa-info-circle">
+                            <path fill="currentColor"
+                                d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z">
+                            </path>
+                        </svg>
+                    </button>
+                </h4>
+                <div class="autoplay-component1">
+                    <form action="#0" class="row g-6 autoplay-form-section">
+                        <div class="col-md-12">
+                            <div class="autoplay-grp">
+                                <select name="state">
+                                    <option value="1">
+                                        Relationship to applicant
+                                    </option>
+                                    <option value="2">
+                                        ID
+                                    </option>
+                                    <option value="3">
+                                        IL
+                                    </option>
+                                    <option value="4">
+                                        IN
+                                    </option>
+                                    <option value="5">
+                                        IA
+                                    </option>
+                                    <option value="6">
+                                        KS
+                                    </option>
+                                    <option value="7">
+                                        KY
+                                    </option>
+                                    <option value="8">
+                                        LA
+                                    </option>
+                                    <option value="9">
+                                        TX
+                                    </option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-md-6">
+                            <div class="autoplay-grp">
+                                <label for="fname" class="label-title">First Name</label>
+                                <input type="text" id="fname" required>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-md-6">
+                            <div class="autoplay-grp">
+                                <label for="lname" class="label-title">Last Name</label>
+                                <input type="text" id="lname" required>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="autoplay-grp">
+                                <label for="email" class="label-title">Email</label>
+                                <input type="text" id="email" required>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="autoplay-grp">
+                                <label for="phone" class="label-title">Mobile Phone Number</label>
+                                <input type="text" id="phone" required>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="autoplay-grp">
+                                <label for="phone" class="label-title">Date of Birth</label>
+                                <input type="number" id="dates" required placeholder="MM//DD/YYYY">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div
+                    class="secure-lock d-flex gap-3 align-items-center justify-content-center mt-xxl-14 mt-xl-11 mt-lg-9 mt-md-8 mt-7 mb-xxl-14 mb-xl-12 mb-lg-10 mb-8">
+                    <i class="fa-solid fa-lock"></i> Your information is secured
+                </div>
+                <div class="text-center d-grid gap-3 justify-content-center">
+                    <a href="bororrower.html" class="back-btn qurite-btn">
+                        Next
+                    </a>
+                    <a href="contact.html" class="back-btn">
+                        Back
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section py-xxl-10 py-xl-9 py-8">
+        <div class="container">
+            <div class="footer-wrapper">
+                <div class="footer-date-area gap-xxl-5 gap-xl-4 gap-3 justify-content-center text-center mb-4">
+                    <a href="#0">8847 4552 452</a>
+                    <p>Monday through Friday 7:00 am - 7:00 pm - Saturday 9:00 am - 5:00 pm Mountain Time</p>
+                </div>
+                <ul class="terms-area mb-3">
+                    <li>
+                        <a href="#">
+                            Terms Of Use
+                        </a>
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <a href="#">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <a href="#">
+                            Do Not Sell My Personal Information
+                        </a>
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <a href="#">
+                            California Collection
+                            Notice
+                        </a>
+                    </li>
+                    <li class="line"></li>
+                    <li>
+                        <a href="#">
+                            Legal
+                        </a>
+                    </li>
+                </ul>
+                <p class="text-center copyright">
+                    &copy; The Savings Group, Inc. All Rights Reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- JavaScript & Plugin Scripts>> -->
+    <!-- Core Libraries -->
+    <script src="assets/js/plugins/jquery-min.js"></script>
+    <script src="assets/js/plugins/bootstrap.js"></script>
+    <script src="assets/js/plugins/aos.js"></script>
+    <script src="assets/js/plugins/jquery.nice-select.min.js"></script>
+    <!-- Custom Script -->
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

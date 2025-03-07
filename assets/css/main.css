@@ -1312,6 +1312,10 @@ iframe {
   display: none; /* Hidden by default */
 }
 
+.just-dobable input {
+  padding: 12px 20px !important;
+}
+
 .autoplay-form-section {
   max-width: 850px;
   margin: 0 auto;
