@@ -375,34 +375,8 @@
     <script src="assets/js/plugins/aos.js"></script>
     <script src="assets/js/plugins/jquery.nice-select.min.js"></script>
     <!-- Custom Script -->
+    <script src="assets/js/make-brand.js"></script>
     <script src="assets/js/main.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const showMoreButton = document.querySelector('.show-more');
-            const hiddenItems = document.querySelectorAll('.hidden-item');
-            let isHidden = true;
-
-            showMoreButton.addEventListener('click', function (event) {
-                event.preventDefault(); // Prevent the default link behavior
-
-                if (isHidden) {
-                    // Show hidden items
-                    hiddenItems.forEach(item => {
-                        item.style.display = 'block';
-                    });
-                    showMoreButton.textContent = 'Show Less'; // Change button text
-                } else {
-                    // Hide items again
-                    hiddenItems.forEach(item => {
-                        item.style.display = 'none';
-                    });
-                    showMoreButton.textContent = 'Show More'; // Change button text
-                }
-
-                isHidden = !isHidden; // Toggle the state
-            });
-        });
-    </script>
 
 </body>
 
