@@ -1109,7 +1109,7 @@ iframe {
 }
 .mileage-form input {
   width: 100%;
-  padding: 24px 20px;
+  padding: 22px 20px !important;
   outline: none;
   border: 0;
 }
@@ -1118,7 +1118,7 @@ iframe {
 }
 .mileage-form p {
   position: absolute !important;
-  bottom: -30px;
+  bottom: -50px;
   left: 0;
 }
 
@@ -1293,11 +1293,6 @@ iframe {
   padding: 6px 10px 11px;
   transition: all 0.4s;
 }
-.custom-form-validation .hidable-btn2.active {
-  background-color: green; /* Example style for active state */
-  color: white;
-  cursor: pointer;
-}
 .custom-form-validation .hidable-btn2.disabled {
   opacity: 0.5;
   cursor: not-allowed;
@@ -1317,6 +1312,10 @@ iframe {
   display: none; /* Hidden by default */
 }
 
+.autoplay-form-section {
+  max-width: 850px;
+  margin: 0 auto;
+}
 .autoplay-form-section .autoplay-grp .label-title {
   font-size: 16px;
   font-weight: 500;
@@ -1429,9 +1428,6 @@ iframe {
 
 .custom-vh {
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 @media screen and (min-width: 1199px) {

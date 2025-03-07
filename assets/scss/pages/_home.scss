@@ -284,7 +284,7 @@
 	border-radius: 4px;
 	input {
 		width: 100%;
-		padding: 24px 20px;
+		padding: 22px 20px !important;
 		outline: none;
 		border: 0;
 	}
@@ -294,14 +294,14 @@
 	position: relative;
 	p {
 		position: absolute !important;
-		bottom: -30px;
+		bottom: -50px;
 		left: 0;
 	}
 }
 //team-information
 
 //hidden-item
-.hidden-item{
+.hidden-item {
 	display: none;
 }
 //hidden-item
@@ -462,16 +462,6 @@
 		font-weight: 900;
 		padding: 6px 10px 11px;
 		transition: all 0.4s;
-		// &.active {
-		// 	border-color: var(--base-clr);
-		// 	color: var(--base-clr);
-		// 	background: var(--white-clr);
-		// }
-	}
-	.hidable-btn2.active {
-		background-color: green; /* Example style for active state */
-		color: white;
-		cursor: pointer;
 	}
 
 	/* Style for disabled button */
@@ -501,6 +491,8 @@
 
 //autoplay-form-section
 .autoplay-form-section {
+	max-width: 850px;
+	margin: 0 auto;
 	.autoplay-grp {
 		.label-title {
 			font-size: 16px;
@@ -623,10 +615,8 @@
 
 .custom-vh {
 	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
 }
+
 
 .footer-one {
 	@media screen and (min-width: 1199px) {
