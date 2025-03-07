@@ -1421,6 +1421,11 @@ iframe {
   height: 12px;
   background: var(--base-clr);
 }
+@media screen and (max-width: 1199px) {
+  .footer-section {
+    margin-top: 280px !important;
+  }
+}
 
 .h100vh {
   height: 100vh;
