@@ -1428,10 +1428,32 @@ iframe {
 
 .custom-vh {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+@media screen and (max-width: 1199px) {
+  body {
+    height: 1080px !important;
+    display: initial !important;
+  }
 }
 
 @media screen and (min-width: 1199px) {
   .footer-one {
     position: absolute;
+  }
+}
+
+@media screen and (min-width: 1199px) {
+  .footer-custom-bottom {
+    padding-bottom: 145px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .footer-custom-bottom {
+    padding-bottom: 40px !important;
   }
 }/*# sourceMappingURL=main.css.map */

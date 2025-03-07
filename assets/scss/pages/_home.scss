@@ -615,11 +615,29 @@
 
 .custom-vh {
 	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
 }
 
+body{
+	@media screen and (max-width:1199px) {
+		height: 1080px !important;
+		display: initial !important;
+	}
+}
 
 .footer-one {
 	@media screen and (min-width: 1199px) {
 		position: absolute;
+	}
+}
+.footer-custom-bottom{
+	@media screen and (min-width:1199px) {
+		padding-bottom: 145px;
+	}
+	@media screen and (max-width: 1199px) {
+		padding-bottom: 40px !important;
 	}
 }
