@@ -279,9 +279,15 @@
 		border-color: #555 transparent transparent transparent;
 	}
 }
+.cus-zin{
+	position: relative;
+	z-index: 9;
+}
 .mileage-form {
 	border: 1px solid #5c595925;
 	border-radius: 4px;
+	position: relative;
+	z-index: 9;
 	input {
 		width: 100%;
 		padding: 22px 20px !important;
@@ -492,6 +498,21 @@
 .just-dobable{
 	input{
 		padding: 12px 20px !important;
+	}
+}
+
+.hidable-btncus{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	content: "";
+	background: rgba(255, 255, 255, 0);
+	opacity: 0;
+	&.disabled{
+		background: red;
+		z-index: 99;
 	}
 }
 
