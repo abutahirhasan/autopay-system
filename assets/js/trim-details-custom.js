@@ -1,6 +1,9 @@
+
 document.addEventListener("DOMContentLoaded", function () {
 	const mileageInput = document.querySelector(".mileage-form input");
-	const nextButton = document.querySelector(".hidable-btn");
+	const nextButtons = document.querySelectorAll(
+		".hidable-btn, .hidable-btncus"
+	); // Select both buttons
 	const form = document.querySelector(".mileage-form");
 
 	// Create error message element
@@ -10,9 +13,24 @@ document.addEventListener("DOMContentLoaded", function () {
 	errorMessage.style.display = "none"; // Initially hidden
 	form.appendChild(errorMessage);
 
-	// Initially disable the button
-	nextButton.classList.add("disabled");
-	nextButton.style.pointerEvents = "none"; // Prevent clicking
+	// Function to disable buttons
+	function disableButtons() {
+		nextButtons.forEach((button) => {
+			button.classList.add("disabled");
+			button.style.pointerEvents = "none";
+		});
+	}
+
+	// Function to enable buttons
+	function enableButtons() {
+		nextButtons.forEach((button) => {
+			button.classList.remove("disabled");
+			button.style.pointerEvents = "auto";
+		});
+	}
+
+	// Initially disable buttons
+	disableButtons();
 
 	mileageInput.addEventListener("input", function () {
 		let rawValue = mileageInput.value.replace(/[^0-9.]/g, ""); // Keep only numbers and dots
@@ -32,12 +50,10 @@ document.addEventListener("DOMContentLoaded", function () {
 		if (digitCount < 3) {
 			errorMessage.textContent = "This field is required";
 			errorMessage.style.display = "block";
-			nextButton.classList.add("disabled");
-			nextButton.style.pointerEvents = "none";
+			disableButtons();
 		} else {
 			errorMessage.style.display = "none"; // Hide error when valid
-			nextButton.classList.remove("disabled");
-			nextButton.style.pointerEvents = "auto";
+			enableButtons();
 		}
 	});
 
