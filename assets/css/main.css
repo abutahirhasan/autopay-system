@@ -1254,6 +1254,9 @@ iframe {
   align-items: center;
   justify-content: center;
 }
+.loader-bg.active {
+  display: none !important;
+}
 
 .loader {
   width: 50px;
@@ -1267,6 +1270,15 @@ iframe {
   -webkit-mask-composite: source-out;
   mask-composite: subtract;
   animation: l3 1s infinite linear;
+}
+
+.loader-bg {
+  transition: opacity 0.5s ease;
+  opacity: 1; /* default opacity */
+}
+
+.loader-bg.active {
+  opacity: 0; /* fade out or hide */
 }
 
 @keyframes l3 {
